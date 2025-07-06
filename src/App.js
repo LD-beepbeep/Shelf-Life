@@ -1,10 +1,19 @@
-import "./styles.css";
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./screens/Home";
+import AddItem from "./screens/AddItem";
+import AllItems from "./screens/AllItems";
+import Settings from "./screens/Settings";
 
 export default function App() {
   return (
-    <div className="App">
-      <h1>Hello CodeSandbox</h1>
-      <h2>Start editing to see some magic happen!</h2>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/add" element={<AddItem />} />
+        <Route path="/items" element={<AllItems />} />
+        <Route path="/settings" element={<Settings />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
