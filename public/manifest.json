@@ -3,12 +3,12 @@
     "name": "ShelfLife — Grocery & Expiry Tracker",
     "icons": [
       {
-        "public": "/icon-192.png",
+        "scr": "/icon-192.png",
         "type": "image/png",
         "sizes": "192x192"
       },
       {
-        "public": "/icon-512.png",
+        "scr": "/icon-512.png",
         "type": "image/png",
         "sizes": "512x512"
       }
